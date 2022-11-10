@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- csss -->
+    <link rel="stylesheet" href="./css/abutUs.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Privacy.css">
+    <link rel="stylesheet" href="./css/property.css">
+    <link rel="stylesheet" href="./css/navcss.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- icon -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css    " />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <title> RentUP</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm position-sticky top-0">
+        <div class="container logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglenavbar"
+                aria-controls="togglenavbar" aria-expanded="false" aria-label="toggle nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="#" class="navbar-brand mb-4  ">
+                <img src="./images/logo-light.png" alt="" class="img-asli" width="150px">
+            </a>
+            <div class="collapse navbar-collapse" id="togglenavbar">
+
+                <div class="navbar-nav ">
+                    <a href="#" class="nav-item nav-link ">Home </a>
+                    <a href="#" class="nav-item nav-link ">listing</a>
+
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Dropdown <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="./abutUs.html">about us</a>
+                            <a href="./addproperty.html">add property</a>
+                            <a href="./signup.html">sign up</a>
+                            <a href="./login.html">log in</a>
+                            <a href="./">rest pass</a>
+                            <a href="./Privacy.html">privacy</a>
+                        </div>
+                    </div>
+                    <a href="./signup.html" class="nav-item nav-link ">sign up</a>
+                </div>
+            </div>
+            <a href="./addproperty.html" class=" bg-succes add-property">
+                add property
+            </a>
+        </div>
+    </nav>
+
+
+    <div class=" continer">
+        <div class=" row p-2">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/p-5.png" class="d-block w-100  img-fluid " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/p-6.png" class="d-block w-100  img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/p-8.png" class="d-block w-100  img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class=" text-loc">
+                <div class="button d-flex m-3">
+                    <button class=" btn-01 m-1">Bead2</button>
+                    <button class=" btn-02 m-1">Bead3</button>
+                    <button class=" btn-03 m-1">Bead2</button>
+                    <button class=" btn-04 m-1">Bead8</button>
+
+                </div>
+                <div class=" text ">
+                    <span>5689 Resot Relly Market, Montreal Canada, HAQC445</span>
+                    <br>
+                    <br>
+
+                    <span class="capshen"><i class=" fa fa-location"></i> 778 Country St. Panama City, FL</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- main -->
+
+
+    <!-- 
+border: 2px solid #f0f2f7;
+border-radius: 6px;
+background: #ffffff;
+ -->
+
+
+    <div class=" continer">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center m-3 content-">
+                <div class=" col-lg-7 col-md-10 col-sm-12 m-2">
+                    <label class="m-2 text-dark d-flex">about property</label>
+                    <p class="card-text col-12">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Non laudantium dolor eaque aut corporis
+
+                        elit. Non laudantium dolor eaque aut corporis
+                        natus modi illum esse, quia laborum!
+                        elit. Non laudantium dolor eaque aut corporis
+                        natus modi illum esse, quia laborum!
+                        natus modi illum esse, quia laborum!
+                    </p>
+                    <div class="d-block m-2 ">  <label class="text-dark d-flex">about property</label></div>
+
+                    <div class="card-text d-flex justify-content-center flex-wrap ">
+                        
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                        <li class="col-lg-4 col-md-6 mb-2 p-2"><i class="fa fa-bed mr-1"></i>4 Bedrooms</li>
+                       
+                    </div>
+
+                    <label class="text-dark d-flex m-2 ">about property</label>
+                        <div class="card-text d-flex justify-content-center flex-wrap ">
+                        
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                            <li class="col-lg-4 col-md-6 mb-2 p-2">4 Bedrooms</li>
+                           
+                        </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <div class="card-text">
+                        <div class="const-01 d-flex justify-content-between">
+                            <div><span class="const-001">$470</span><span class="nigth">/Night</span></div>
+                            <div class="off">
+                                <span>$510</span>
+                                <button>20% off</button>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="box">
+                            <div class="box d-flex justify-content-between text-center">
+                                <div>
+                                    <input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
+                                    <span>Air Condition</span>
+                                </div>
+                                <span>10$</span>
+                            </div>
+
+
+                            <div class="box d-flex justify-content-between text-center">
+                                <div>
+                                    <input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
+                                    <span>Air Condition</span>
+                                </div>
+                                <span>20$</span>
+                            </div>
+
+
+                            <div class="box d-flex justify-content-between text-center">
+                                <div>
+                                    <input id="a-1" class="checkbox-custom " name="a-1" type="checkbox">
+                                    <span>Air Condition</span>
+                                </div>
+                                <span>30$</span>
+                            </div>
+
+                            <div class="box d-flex justify-content-between text-center">
+                                <div>
+                                    <input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
+                                    <span>Air Condition</span>
+                                </div>
+                                <span>42$</span>
+                            </div>
+                        </div>
+
+<div class="text-box">
+    <label class="text-dark lebel ">Price & Tax</label>
+    <div class="text-col-box justify-content-between d-flex flex-column">
+        <div class="box d-flex justify-content-between text-center">
+            <div>
+                <span>Air Condition</span>
+            </div>
+            <span>30$</span>
+        </div>
+
+
+        <div class="box d-flex justify-content-between text-center">
+            <div>
+                <span>Air Condition</span>
+            </div>
+            <span>30$</span>
+        </div>
+
+        <div class="box d-flex justify-content-between text-center">
+            <div>
+                <span>Air Condition</span>
+            </div>
+            <span>30$</span>
+        </div>
+
+        <div class="box d-flex justify-content-between text-center">
+            <div>
+                <span>Air Condition</span>
+            </div>
+            <span>30$</span>
+        </div>
+       
+    </div>
+    
+</div>
+<div class=" d-flex justify-content-between">
+    <span class=" total">Total payment</span>
+    <span class="const-total">$170</span>
+</div>
+
+<div class="d-flex justify-content-center btn-book">
+    <button>book it new</button>
+</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class=" continer">
+        <div class=" row w-100">
+            <div class=" content d-flex justify-content-between ">
+                <div class=" text text-white p-4">
+                    <h1>Do You Have Questions ?</h1><br>
+                    <p>We'll help you to grow your career and growth.</p>
+                </div>
+                <div class=" button01 my-auto text-white"><button>Contact Us Today</button></div>
+            </div>
+            <footer class=" col-12 d-flex  justify-content-between align-content-center p-5">
+                <div class="logo-text col-lg-6">
+                    <img src="./images/logo-light.png" alt="">
+                    <div class=" text4 text-white">
+                        <h3>Do You Need Help With
+                            <br> Anything?
+                        </h3>
+                    </div>
+                    <br>
+                    <p>Receive updates, hot deals, tutorials, discounts sent straignt in your<br> inbox every month</p>
+
+
+                </div>
+                <div>
+                    <div class="menu-text col-lg-6 d-flex  ">
+                        <div class=" col-2 menu-1 d-flex justify-content-center align-content-center flex-column mx-5">
+                            <span class="title-text t">LAYOUTS</span>
+                            <span>Home </span>
+                            <span>About </span>
+                            <span>Property </span>
+                            <span class="text-white mx-auto bg-danger rounded p-1">Service </span>
+                            <span>Contact </span>
+                            <span>Single Blog</span>
+
+                        </div>
+
+                        <div class=" col-2 menu-1 d-flex justify-content-center flex-column mx-5">
+                            <span class="title-text">ALLSECTIONS</span>
+                            <span>Headers</span>
+                            <span>Features</span>
+                            <span>Testimonials</span>
+                            <span>Videos</span>
+                            <span class=" text-white mx-auto bg-success rounded p-1">Attractive</span>
+                            <span>Footers</span>
+                        </div>
+
+                        <div class=" menu-1 col-2 d-flex justify-content-center flex-column mx-5">
+                            <span class="title-text">COMPANY</span>
+                            <span>About</span>
+                            <span>Blog</span>
+                            <span>Affiliate</span>
+                            <span class=" text-white mx-auto bg-warning rounded p-1">Pricing</span>
+                            <span>Login</span>
+                            <span>Changelog</span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

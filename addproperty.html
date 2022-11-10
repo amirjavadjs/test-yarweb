@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- csss -->
+        <link rel="stylesheet" href="./css/Privacy.css">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./css/navcss.css">
+        <link rel="stylesheet" href="./css/addproperty.css">
+        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+        <!-- icon -->
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css    " />
+    
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <title>RentUP</title>
+    
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm position-sticky top-0">
+        <div class="container logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglenavbar" aria-controls="togglenavbar" 
+            aria-expanded="false" aria-label="toggle nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+            <a href="#" class="navbar-brand mb-4  ">
+                <img src="./images/logo-light.png" alt="" class="img-asli" width="150px">
+            </a>
+          <div class="collapse navbar-collapse" id="togglenavbar">    
+    
+        <div class="navbar-nav ">
+            <a href="#" class="nav-item nav-link ">Home </a>
+            <a href="#" class="nav-item nav-link ">listing</a>
+    
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="./abutUs.html">about us</a>
+                <a href="./addproperty.html">add property</a>
+                <a href="./signup.html">sign up</a>
+                <a href="./login.html">log in</a>
+                <a href="./">rest pass</a>
+                <a href="./Privacy.html">privacy</a>
+              </div>
+            </div>
+            <a href="./signup.html" class="nav-item nav-link ">sign up</a>
+        </div>
+    </div>
+        <a href="./addproperty.html" class=" bg-succes add-property">
+            add property
+        </a>
+    </div>
+    </nav>
+
+    <header>
+        <div class=" baner-main text-with ">
+            <div class=" text-">    
+                <h1 class="text-center mt-5 bg-warning">Add property page</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="head">
+            <h1>Basic information</h1>
+        </div>
+        <div class="input-top">
+            <div class="row rounded">
+                <div class="col-lg-4 col-md-3 col-sm-12">
+                    <div class="form-group">
+                        <label>status</label>
+                        <div class="input-with-icon my-auto p-3">
+                            <select id="location" class="form-control select2-hidden-accessible" data-select2-id="location" tabindex="-1" aria-hidden="true">
+                                <option value="" data-select2-id="6">&nbsp;</option>
+                                <option value="1">for sale</option>
+                                <option value="2">for rent</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 288.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-location-container"><span class="select2-selection__rendered" id="select2-location-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="form-group2">
+                        <label>property type</label>
+                        <div class="input-with-icon p-3">
+                            <select id="ptypes" class="form-control select2-hidden-accessible" data-select2-id="ptypes" tabindex="-1" aria-hidden="true">
+                                <option value="" data-select2-id="2">&nbsp;</option>
+                                <option value="1">all categories</option>
+                                <option value="2">apartment</option>
+                                <option value="3">villas</option>
+                                <option value="4">commercial</option>
+                                <option value="5">office</option>
+                                <option value="6">garage</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 209px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ptypes-container"><span class="select2-selection__rendered" id="select2-ptypes-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-group none">
+                        <label>price</label>
+                        <div class="input-with-icon p-3">
+                            <select id="price" class="form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                                <option value="" data-select2-id="4">&nbsp;</option>
+                                <option value="1">USD</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 289.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-price-container"><span class="select2-selection__rendered" id="select2-price-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <di v class="input-top">
+                <div class="row rounded">
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+                        <div class="form-group">
+                            <label>Area</label>
+                            <div class="input-with-icon my-auto p-3">
+                                <input id="location" class="form-control select2-hidden-accessible" data-select2-id="location" tabindex="-1" aria-hidden="true">
+                                </input><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 288.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-location-container"><span class="select2-selection__rendered" id="select2-location-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="form-group2">
+                            <label>bedroom</label>
+                            <div class="input-with-icon p-3">
+                                <select id="ptypes" class="form-control select2-hidden-accessible" data-select2-id="ptypes" tabindex="-1" aria-hidden="true">
+                                    <option value="" data-select2-id="2">&nbsp;</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 209px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ptypes-container"><span class="select2-selection__rendered" id="select2-ptypes-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-group none">
+                            <label>bathroom</label>
+                            <div class="input-with-icon p-3">
+                                <select id="price" class="form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                                    <option value="" data-select2-id="4">&nbsp;</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 289.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-price-container"><span class="select2-selection__rendered" id="select2-price-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                <div class="form-group none">
+                    <label>property title</label>
+                    <div class="input-with-icon p-3">
+                        <input type="text" id="price" class="is-valid form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                        </input><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 289.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-price-container"><span class="select2-selection__rendered" id="select2-price-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+            </div>
+        </di>
+
+
+    <div class="form mt-5">
+        <form action="" class="form-action">
+            <input type="file" id="my-file" name="my-file">
+            <input type="submit" id="my-file">
+        </form>
+    </div>
+
+
+    <div class="s-form mt-5" >
+            <div class="head">
+                <h1>location</h1>
+            </div>
+            <div class="input-top mt-5">
+                <div class="row rounded">
+                    <div class="col-lg-4 col-md-3 col-sm-12">
+                        <div class="form-group">
+                            <label>city</label>
+                            <div class="input-with-icon my-auto p-3">
+                                <input id="location" class="form-control select2-hidden-accessible" data-select2-id="location" tabindex="-1" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="form-group2">
+                            <label>satate</label>
+                            <div class="input-with-icon p-3">
+                                <input id="ptypes" class="form-control select2-hidden-accessible" data-select2-id="ptypes" tabindex="-1" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-group none">
+                            <label>zip code</label>
+                            <div class="input-with-icon p-3">
+                                <input id="price" class="form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="form-group none">
+                        <label>Address</label>
+                        <div class="input-with-icon p-3">
+                            <input id="price" class="is-valid form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div>
+        <h1 class="mt-5">description</h1>
+
+        <textarea class="form-control h-120 mt-3"></textarea>
+    </div>
+
+
+
+    <div class="input-top">
+        <div class="row rounded">
+            <h1 class="mt-5">content information</h1>
+            <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="form-group">
+                    <label>name</label>
+                    <div class="input-with-icon my-auto p-3">
+                        <input id="location" class="form-control select2-hidden-accessible" data-select2-id="location" tabindex="-1" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="form-group2">
+                    <label>email</label>
+                    <div class="input-with-icon p-3">
+                        <input id="ptypes" class="form-control select2-hidden-accessible" data-select2-id="ptypes" tabindex="-1" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="form-group none">
+                    <label>phone</label>
+                    <div class="input-with-icon p-3">
+                        <input id="price" class="form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer1">
+        <section class="app bg-map">
+            <section class="footer-row">
+                <section class="footer-col">
+                    <h3 class="footer-section-title">other option </h3>
+                    <section class="footer-section-link-item">
+                        <div class="chack">
+                            <label for="" class="footer-label">heating</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="chack">
+                            <label for="" class="footer-label">smoking allow</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="chack">
+                            <label for=""class="footer-label">icon</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="chack">
+                            <label for="" class="footer-label">parking</label>
+                            <input type="checkbox">
+                        </div>
+
+
+                    </section>
+                    <section class="footer-line"></section>
+                    <section class="footer-section-link-item">
+
+                        
+
+                    </section>
+                </section>
+
+                <section class="footer-col">
+                    <h3 class="footer-section-title">detailed info</h3>
+                    <section class="footer-section-link-item">
+                        <div class="chack">
+                            <label for="" class="footer-label">air condition</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="chack">
+                            <label for="" class="footer-label">internet</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="chack">
+                            <label for="" class="footer-label">terrace</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="chack">
+                            <label for="" class="footer-label">wi-fi</label>
+                            <input type="checkbox">
+                        </div>
+
+
+                    </section>
+                    <section class="footer-line"></section>
+                    <section class="footer-section-link-item">
+
+                        
+
+                    </section>
+                </section>
+                <section class="footer-col">
+                    <h3 class="footer-section-title">room option</h3>
+                    <section class="footer-section-link-item"></section>
+                    <section class="footer-section-link-item">
+                        
+                    <div class="chack">
+                        <label for="" class="footer-label">bedding</label>
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="chack">
+                        <label for=""class="footer-label">microwave</label>
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="chack">
+                        <label for=""class="footer-label">baicony</label>
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="chack">
+                        <label for=""class="footer-label">beach</label>
+                        <input type="checkbox">
+                    </div>
+
+                    </section>
+                </section>
+                <section class="clear-fix"></section>
+            </section>
+        <section class="clear-fix"></section>
+    </footer>
+
+
+ 
+
+
+
+
+
+    <a href="./addproperty.html" class=" bg-warning  add-property mb-5">
+        add property
+    </a>
+
+
+    
+    <div class=" continer mt-3">
+        <div class=" row w-100">
+            <div class=" content d-flex justify-content-between ">
+                <div class=" text text-white ">
+                    <h1>Do You Have Questions ?</h1><br>
+                    <p>We'll help you to grow your career and growth.</p>
+                </div>
+                <div class=" button01 my-auto text-white"><button>Contact Us Today</button></div>
+            </div>
+            <footer class=" col-12 d-flex  justify-content-between align-content-center p-5">
+                <div class="logo-text col-lg-6">
+                    <img src="./images/logo-light.png" alt="">
+                    <div class=" text4 text-white">
+                        <h3>Do You Need Help With
+                            <br> Anything?
+                        </h3>
+                    </div>
+                    <br>
+                    <p>Receive updates, hot deals, tutorials, discounts sent straignt in your<br> inbox every month</p>
+
+                
+                </div>
+                <div>
+                    <!-- <div class="menu-text col-lg-6 d-flex  ">
+                        <div class=" col-2 menu-1 d-flex justify-content-center align-content-center flex-column mx-5">
+                            <span class="title-text t">LAYOUTS</span>
+                            <span>Home </span>
+                            <span>About </span>
+                            <span>Property </span>
+                            <span class="text-white mx-auto bg-danger rounded p-1">Service </span>
+                            <span>Contact </span>
+                            <span>Single Blog</span>
+
+                        </div>
+
+                        <div class=" col-2 menu-1 d-flex justify-content-center flex-column mx-5">
+                            <span class="title-text">ALLSECTIONS</span>
+                            <span>Headers</span>
+                            <span>Features</span>
+                            <span>Testimonials</span>
+                            <span>Videos</span>
+                            <span class=" text-white mx-auto bg-success rounded p-1">Attractive</span>
+                            <span>Footers</span>
+                        </div>
+
+                        <div class=" menu-1 col-2 d-flex justify-content-center flex-column mx-5">
+                            <span class="title-text">COMPANY</span>
+                            <span>About</span>
+                            <span>Blog</span>
+                            <span>Affiliate</span>
+                            <span class=" text-white mx-auto bg-warning rounded p-1">Pricing</span>
+                            <span>Login</span>
+                            <span>Changelog</span>
+
+                        </div>
+
+                    </div> -->
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }   
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+  
+  
+    
+</body>
+</html>

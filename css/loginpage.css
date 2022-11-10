@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'IranianSansBold';
+	src: url('./iran-sans-master/fonts/IranianSansBold.ttf') format('truetype');
+    src: url('./iran-sans-master/fonts/IRANSans-web.woff');
+	font-weight: bold;
+	font-style: bold;
+}
+@font-face {
+	font-family: 'IranianSans';
+	src: url('.//iran-sans-master/fonts/IranianSansRegular.ttf') format('truetype'),
+		 url('./iran-sans-master/fonts/IRANSans-web.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login{
+    text-align: center;
+    width: 430px;
+    height: 650px;
+    background-color: #ecf0f3;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff;
+}
+.picture{
+    font-size: 17px;
+    font-family: 'IranianSansBold';
+    font-weight: 900;
+    color: #42b4aa;
+}
+.three-btn{
+    margin-top: 50px;
+    height: 100px; 
+}
+.btn1{
+    background-color: #d7dadd; 
+    border: 1px solid white;
+    height: 35px;
+    border-radius: 7px;
+    color: #4b6a83;
+    font-family: 'IranianSansBold';
+    font-size: 12px;
+}
+.btn1:hover{
+    border: 2px solid #42b4aa;
+}
+.vorod{
+    font-family:'IranianSansBold' ;
+    color: #4b6a83;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 40px;
+
+    
+}
+.baray-vorod{
+    font-family:'IranianSansBold' ;
+    color: #797b7e;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 27px;
+}
+
+.kodmali input{
+    text-align: right;
+    margin-top: 30px;
+    font-family:'IranianSansBold' ;
+    margin-bottom: 15px;
+    width: 78%;
+    height: 35px;
+    border-radius: 8px;
+   
+    border: 2px solid #797b7e;
+
+
+}
+.pass input{
+    text-align:right;
+    font-family: 'IranianSansBold';
+    width: 78%;
+    height: 35px;
+    border: 2px solid #797b7e;
+    border-radius: 8px;
+
+
+
+
+}
+.btn-next{
+    background-color: #42b4aa;
+    margin-top: 50px;
+    width: 78%;
+    border-radius: 8px;
+    font-family: 'IranianSansBold';
+    font-weight: bold;
+    color: #ffffff;
+    height: 35px;
+}

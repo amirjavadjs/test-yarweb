@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- csss -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- icon -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css    " />
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js" integrity="sha512-bkRnY+Yd8OOKaLeSQ4ywl+eeJKIbJ5TtBvyWwM2OnsV1qeIZb2yi7E4h2P6XVcAMz3ldrTKAXk/lC5vvZnDkZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js" integrity="sha512-71NOmf+URzhLUTnRw76rkHDDUZZ9HJzF+CVVej3qrCaUnWG220eW3riAuhozwTrn0RpLnhj5aP0SVn5u0Crw/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.js" integrity="sha512-a1HFA1NIciHH1JtCbf7DS4zAK6FxUsmnXSIEfPm75d3vgPVfaVeVQbKcX7iqqvyp4kTUtqWB+Z7/4S8QhIqXbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+  <title>RentUP</title>
+</head>
+
+<body>
+
+  <nav class= "navbar bg-dark navbar-dark navbar-expand-sm position-sticky top-0">
+    <div class="container logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglenavbar" aria-controls="togglenavbar" 
+        aria-expanded="false" aria-label="toggle nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <a href="#" class="navbar-brand mb-4  ">
+            <img src="./images/logo-light.png" alt="" class="img-asli" >
+        </a>
+      <div class="collapse navbar-collapse" id="togglenavbar">    
+
+    <div class="navbar-nav ">
+        <a href="#" class="nav-item nav-link ">Home </a>
+        <a href="#" class="nav-item nav-link ">listing</a>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./abutUs.html">about us</a>
+            <a href="./addproperty.html">add property</a>
+            <a href="./signup.html">sign up</a>
+            <a href="./login.html">log in</a>
+            <a href="./forgotpass.html">rest pass</a>
+            <a href="./Privacy.html">privacy</a>
+          </div>
+        </div>
+        <a href="./signup.html" class="nav-item nav-link ">sign up</a>
+    </div>
+</div>
+    <a href="./addproperty.html" class=" bg-succes add-property">
+        add property
+    </a>
+</div>
+</nav>
+    
+<header>
+<section class="brand justify-content-center align-item-center">
+    <h1 class="search-title">Search Your Next Home<h1>
+        <p class="search-text">Find new & featured property located in your local city.</p>
+</section>
+
+<div class="main ">
+    <div class="row rounded">
+        <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="form-group">
+                <label>city and street</label>
+                <div class="input-with-icon my-auto p-3">
+                    <select id="location" class="form-control select2-hidden-accessible" data-select2-id="location" tabindex="-1" aria-hidden="true">
+                        <option value="" data-select2-id="6">&nbsp;</option>
+                        <option value="1">homs</option>
+                        <option value="2">oficoa</option>
+                        <option value="3">addas fse</option>
+                        <option value="4">addas fse</option>
+                        <option value="5">addas fse</option>
+                        <option value="6">addas fse</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 288.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-location-container"><span class="select2-selection__rendered" id="select2-location-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="form-group2">
+                <label>property type</label>
+                <div class="input-with-icon p-3">
+                    <select id="ptypes" class="form-control select2-hidden-accessible" data-select2-id="ptypes" tabindex="-1" aria-hidden="true">
+                        <option value="" data-select2-id="2">&nbsp;</option>
+                        <option value="1">all categories</option>
+                        <option value="2">apartment</option>
+                        <option value="3">villas</option>
+                        <option value="4">commercial</option>
+                        <option value="5">office</option>
+                        <option value="6">garage</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 209px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ptypes-container"><span class="select2-selection__rendered" id="select2-ptypes-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="form-group none">
+                <label>price range</label>
+                <div class="input-with-icon p-3">
+                    <select id="price" class="form-control select2-hidden-accessible" data-select2-id="price" tabindex="-1" aria-hidden="true">
+                        <option value="" data-select2-id="4">&nbsp;</option>
+                        <option value="1">from 40,000 to 10m</option>
+                        <option value="2">from 60,000 to 20m</option>
+                        <option value="3">from 70,000 to 30m</option>
+                        <option value="3">from 80,000 to 40m</option>
+                        <option value="3">from 90,000 to 50m</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 289.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-price-container"><span class="select2-selection__rendered" id="select2-price-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-1 col-md-2 col-sm-12 small-padd p-3 ">
+            <div class="form-group none">
+                <a href="#" class="btn bg-success search-btn text-white"><i class="fa fa-search "></i></a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="continer">
+  <div class="row">
+    <div class="
+          text
+          d-flex
+          justify-content-center
+          align-content-center
+          flex-column
+        ">
+      <h1 class="text-center">home type property</h1>
+      <p class="text-center text-justfy">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque quaerat iste, 
+        error quos nisi minus reiciendis quisquam tempora hic.
+      </p>
+    </div>
+  <a href="./all.html">
+    <div class="
+    card-item
+    d-flex
+    justify-content-center
+    align-content-center
+    col-12
+    mx-auto
+    p-5
+    flex-wrap
+  
+  ">
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="./all.html">
+      <img src="./images/f-2.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>22 property</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="./all.html">
+      <img src="./images/f-4.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <div class="card-title d-flex justify-content-between">
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="#">
+      <img src="./images/f-1.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <hr>
+      <div class=" d-flex  justify-content-between">
+    </div>
+  </div>
+</div>
+</div>
+  </a>
+
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="continer">
+  <div class="row">
+    <div class="
+          text
+          d-flex
+          justify-content-center
+          align-content-center
+          flex-column
+        ">
+    </div>
+  <a href="./all.html">
+    <div class="
+    card-item
+    d-flex
+    justify-content-center
+    align-content-center
+    col-12
+    mx-auto
+    p-5
+    flex-wrap
+  
+  ">
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="./all.html">
+      <img src="./images/f-2.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>22 property</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="./all.html">
+      <img src="./images/f-4.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <div class="card-title d-flex justify-content-between">
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="#">
+      <img src="./images/f-1.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <hr>
+      <div class=" d-flex  justify-content-between">
+    </div>
+  </div>
+</div>
+</div>
+  </a>
+
+    
+  </div>
+
+</div>
+
+
+
+<!-- <div class="continer">
+  <div class="row">
+    <div class="
+          text
+          d-flex
+          justify-content-center
+          align-content-center
+          flex-column
+        ">
+    </div>
+  <a href="./all.html">
+    <div class="
+    card-item
+    d-flex
+    justify-content-center
+    align-content-center
+    col-12
+    mx-auto
+    p-5
+    flex-wrap
+  
+  ">
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="./all.html">
+      <img src="./images/f-2.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <div class="card-title d-flex justify-content-between">
+        <span><i class=" fa fa-water"></i> test</span>
+        <span><i class=" fa fa-bed"></i> test</span></span>
+        <span><i class=" fa fa-multiply"></i> test</span></span>
+      </div>
+      <hr>
+      <div class=" d-flex  justify-content-between">
+        <span><i class=" fa fa-location"></i>Montreal, Canada</span>
+        <div>
+          <span class=" icon-footer"><i class=" fa fa-heart"></i> </span>
+          <span class=" icon-footer"><i class="fa fa-arrow-alt-circle-right "></i> </span></span>
+          <span class=" icon-footer"><i class="fa fa-arrow-down-up-across-line"></i> </span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="./all.html">
+      <img src="./images/f-4.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <div class="card-title d-flex justify-content-between">
+        <span><i class=" fa fa-water"></i> test</span>
+        <span><i class=" fa fa-bed"></i> test</span></span>
+        <span><i class=" fa fa-multiply"></i> test</span></span>
+      </div>
+      <hr>
+      <div class=" d-flex  justify-content-between ">
+        <span><i class=" fa fa-location"></i>Montreal, Canada</span>
+        <div>
+          <span class=" icon-footer"><i class=" fa fa-heart"></i> </span>
+          <span class=" icon-footer"><i class="fa fa-arrow-alt-circle-right "></i> </span></span>
+          <span class=" icon-footer"><i class="fa fa-arrow-down-up-across-line"></i> </span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-3">
+  <div class="card" style="width: rem">
+<a href="#">
+      <img src="./images/f-1.png" class="card-img-top-1" alt="homs" />
+</a>
+    <div class="card-body">
+      <div class="card-title d-flex justify-content-between">
+        <div>
+          <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+        </div>
+
+        <div class="const"><span>$6,900</span></div>
+      </div>
+      <p class="card-text">
+        425 Vine 012 Street, Montreal Canada, UHW45Q
+      </p>
+      <div class="card-title d-flex justify-content-between">
+        <span><i class=" fa fa-water"></i> test</span>
+        <span><i class=" fa fa-bed"></i> test</span></span>
+        <span><i class=" fa fa-multiply"></i> test</span></span>
+      </div>
+      <hr>
+      <div class=" d-flex  justify-content-between">
+        <span><i class=" fa fa-location"></i>Montreal, Canada</span>
+        <div>
+          <span class=" icon-footer"><i class=" fa fa-heart"></i> </span>
+          <span class=" icon-footer"><i class="fa fa-arrow-alt-circle-right "></i> </span></span>
+          <span class=" icon-footer"><i class="fa fa-arrow-down-up-across-line"></i> </span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </a>
+
+    
+  </div>
+
+</div>
+</div>
+</div>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="continer">
+    <div class="row">
+      <div class="
+            text
+            d-flex
+            justify-content-center
+            align-content-center
+            flex-column
+          ">
+        <h1 class="text-center">Featured Listed Property</h1>
+        <p class="text-center text-justfy">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt<br />
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    <a href="./all.html">
+      <div class="
+      card-item
+      d-flex
+      justify-content-center
+      align-content-center
+      col-12
+      mx-auto
+      p-5
+      flex-wrap
+    
+    ">
+  <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+    <div class="card" style="width: rem">
+<a href="./all.html">
+        <img src="./images/p-1.png" class="card-img-top" alt="homs" />
+</a>
+      <div class="card-body">
+        <div class="card-title d-flex justify-content-between">
+          <div>
+            <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+          </div>
+
+          <div class="const"><span>$6,900</span></div>
+        </div>
+        <p class="card-text">
+          425 Vine 012 Street, Montreal Canada, UHW45Q
+        </p>
+        <div class="card-title d-flex justify-content-between">
+          <span><i class=" fa fa-water"></i> test</span>
+          <span><i class=" fa fa-bed"></i> test</span></span>
+          <span><i class=" fa fa-multiply"></i> test</span></span>
+        </div>
+        <hr>
+        <div class=" d-flex  justify-content-between">
+          <span><i class=" fa fa-location"></i>Montreal, Canada</span>
+          <div>
+            <span class=" icon-footer"><i class=" fa fa-heart"></i> </span>
+            <span class=" icon-footer"><i class="fa fa-arrow-alt-circle-right "></i> </span></span>
+            <span class=" icon-footer"><i class="fa fa-arrow-down-up-across-line"></i> </span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+    <div class="card" style="width: rem">
+<a href="./all.html">
+        <img src="./images/p-6.png" class="card-img-top" alt="homs" />
+</a>
+      <div class="card-body">
+        <div class="card-title d-flex justify-content-between">
+          <div>
+            <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+          </div>
+
+          <div class="const"><span>$6,900</span></div>
+        </div>
+        <p class="card-text">
+          425 Vine 012 Street, Montreal Canada, UHW45Q
+        </p>
+        <div class="card-title d-flex justify-content-between">
+          <span><i class=" fa fa-water"></i> test</span>
+          <span><i class=" fa fa-bed"></i> test</span></span>
+          <span><i class=" fa fa-multiply"></i> test</span></span>
+        </div>
+        <hr>
+        <div class=" d-flex  justify-content-between ">
+          <span><i class=" fa fa-location"></i>Montreal, Canada</span>
+          <div>
+            <span class=" icon-footer"><i class=" fa fa-heart"></i> </span>
+            <span class=" icon-footer"><i class="fa fa-arrow-alt-circle-right "></i> </span></span>
+            <span class=" icon-footer"><i class="fa fa-arrow-down-up-across-line"></i> </span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+    <div class="card" style="width: rem">
+<a href="./all.html">
+        <img src="./images/p-2.png" class="card-img-top" alt="homs" />
+</a>
+      <div class="card-body">
+        <div class="card-title d-flex justify-content-between">
+          <div>
+            <button class="btn-red">4 Network</button><button class="btn-gren">Condos</button>
+          </div>
+
+          <div class="const"><span>$6,900</span></div>
+        </div>
+        <p class="card-text">
+          425 Vine 012 Street, Montreal Canada, UHW45Q
+        </p>
+        <div class="card-title d-flex justify-content-between">
+          <span><i class=" fa fa-water"></i> test</span>
+          <span><i class=" fa fa-bed"></i> test</span></span>
+          <span><i class=" fa fa-multiply"></i> test</span></span>
+        </div>
+        <hr>
+        <div class=" d-flex  justify-content-between">
+          <span><i class=" fa fa-location"></i>Montreal, Canada</span>
+          <div>
+            <span class=" icon-footer"><i class=" fa fa-heart"></i> </span>
+            <span class=" icon-footer"><i class="fa fa-arrow-alt-circle-right "></i> </span></span>
+            <span class=" icon-footer"><i class="fa fa-arrow-down-up-across-line"></i> </span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </a>
+
+      
+    </div>
+
+  </div>
+  </div>
+  </div>
+<div class=" continer">
+  <div class=" row">
+    <h1 class="text-center">Featured Listed Property</h1>
+    <p class="text-center text-justfy">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt<br />
+      ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    </p>
+
+
+    
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/city-6.png" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/city-6.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/city-6.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    
+</div>
+  <br>
+  <div class=" continer">
+    <h1 class="text-center">Featured Listed Property</h1>
+    <p class="text-center text-justfy">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt<br />
+      ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    </p>
+</div>
+    <div class=" row ">
+  
+  <div class=" mx-auto d-flex justify-content-center flex-wrap">
+    <div class="col-lg-4  col-md-6 col-sm-12 p-3">
+      <div class="card" style="width: rem">
+<a href="./all.html">
+          <img src="./images/b-1.jpg" class="card-img-top position-relative" alt="homs" />
+</a>
+        <div class=" info-text position-absolute">
+          <span class="date-text">15</span>
+          Aug 2021
+        </div>
+        <div class="card-body">
+          <div class="card-title d-flex justify-content-between">
+            <div class="text">Creative Designs</div>
+            <div>
+              <button class="btn-gren2">Condos</button>
+            </div>
+
+          </div>
+          <p class="card-text text3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, deleniti.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4  col-md-6 col-sm-12 p-3">
+      <div class="card" style="width: rem">
+<a href="./all.html">
+          <img src="./images/b-6.jpg" class="card-img-top" alt="homs" />
+</a>
+        <div class=" info-text position-absolute">
+          <span class="date-text">15</span>
+          Aug 2021
+        </div>
+        <div class="card-body">
+          <div class="card-title d-flex justify-content-between">
+            <div class="text">Creative Designs</div>
+            <div>
+              <button class="btn-gren2">Condos</button>
+            </div>
+
+          </div>
+          <p class="card-text text3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, deleniti.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4  col-md-6 col-sm-12 p-3">
+      <div class="card" style="width: rem">
+<a href="./all.html">
+          <img src="./images/b-5.jpg" class="card-img-top" alt="homs" />
+</a>
+        <div class=" info-text position-absolute">
+          <span class="date-text">15</span>
+          Aug 2021
+        </div>
+        <div class="card-body">
+          <div class="card-title d-flex justify-content-between">
+            <div class="text">Creative Designs</div>
+            <div>
+              <button class="btn-gren2">Condos</button>
+            </div>
+
+          </div>
+          <p class="card-text text3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, deleniti.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+      
+
+    </div>
+    <br>
+    <br>
+
+    <div class=" continer">
+      <div class=" row w-100">
+        <div class=" content d-flex justify-content-between ">
+          <div class=" text text-white ">
+            <h1>Do You Have Questions ?</h1><br>
+            <p>We'll help you to grow your career and growth.</p>
+          </div>
+          <div class=" button01 my-auto text-white"><button>Contact Us Today</button></div>
+        </div>
+        <footer class=" col-12 d-flex  justify-content-between align-content-center p-5">
+          <div class="logo-text col-lg-6">
+            <img src="./images/logo-light.png" alt="">
+            <div class=" text4 text-white">
+              <h3>Do You Need Help With
+                <br> Anything?
+              </h3>
+            </div>
+            <br>
+            <p>Receive updates, hot deals, tutorials, discounts sent straignt in your<br> inbox every month</p>
+
+            <div class=" form p-3">
+              <input placeholder="Email address"><button>Subscribe</button>
+
+            </div>
+          </div>
+          <div>
+            <div class="menu-text col-lg-6 d-flex  ">
+              <div class=" col-2 menu-1 d-flex justify-content-center align-content-center flex-column mx-5">
+                <span class="title-text t">LAYOUTS</span>
+                <span>Home </span>
+                <span>About </span>
+                <span>Property </span>
+                <span class="text-white mx-auto bg-danger rounded p-1">Service </span>
+                <span>Contact </span>
+                <span>Single Blog</span>
+
+              </div>
+
+              <div class=" col-2 menu-1 d-flex justify-content-center flex-column mx-5">
+                <span class="title-text">ALLSECTIONS</span>
+                <span>Headers</span>
+                <span>Features</span>
+                <span>Testimonials</span>
+                <span>Videos</span>
+                <span class=" text-white mx-auto bg-success rounded p-1">Attractive</span>
+                <span>Footers</span>
+              </div>
+
+              <div class=" menu-1 col-2 d-flex justify-content-center flex-column mx-5">
+                <span class="title-text">COMPANY</span>
+                <span>About</span>
+                <span>Blog</span>
+                <span>Affiliate</span>
+                <span class=" text-white mx-auto bg-warning rounded p-1">Pricing</span>
+                <span>Login</span>
+                <span>Changelog</span>
+
+              </div>
+
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }   
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+
+
+
+</body>
+
+</html>

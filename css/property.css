@@ -1,0 +1,131 @@
+body{
+    background-color: #ffffff !important;
+}
+
+
+.btn-d{
+    border-radius: 10px;
+    padding: 5px;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+
+
+.btn-0{
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.btn-01{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: rgba(230, 34, 34,0.1);
+    color: #e62222;
+}
+
+.btn-02{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: rgba(76, 175, 80,0.1);
+    color: #4caf50;
+}
+.btn-03{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: rgba(255, 152, 0,0.1);
+    color: #ff9800;
+}
+.btn-04{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: rgba(3, 169, 244,0.1);
+    color: #03a9f4;
+}
+
+
+.card-text{
+    border: 2px solid #f0f2f7;
+border-radius: 6px;
+background: #ffffff;
+text-align: center;
+}
+
+.bg-check{
+    background-color: darkgray;
+    color: black;
+    border: 2px solid #f0f2f7;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+
+.const-001{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.off span{
+color: #e62222;
+}
+
+.off button{
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+.lebel{
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.text-col-box{
+    background-color: #ffffff;
+    
+    border: 2px solid #f0f2f7;
+    border-radius: 6px;
+    padding: 5px;   
+}
+
+.const-total{
+    color: #4caf50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.total{
+    color: black;
+    font-weight: bold;
+}
+.content-{
+    flex-wrap: wrap;
+}
+.btn-book button{
+    background-color: #4caf50;
+    width: 100%;
+    border: 2px solid #f0f2f7;
+    border-radius: 6px;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul,li{
+    list-style-type: none;
+}
+

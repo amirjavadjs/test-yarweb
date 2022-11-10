@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+/* car */
+.card{
+    color: #72809D;
+    background: #ffffff;
+}
+
+.card-text{
+    color: black;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.btn-red{
+    background: rgba(255, 87, 34,0.1);
+    color: #ff5722;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin: 5px;
+}
+
+.btn-gren{
+    background: rgba(37, 181, 121,0.1);
+    color: #25b579;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin: 5px;
+}
+
+.const{
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.icon-footer i{
+    border: 1px solid #72809D;
+    border-radius: 50%;
+    padding:5px;
+    
+}
+
+@media (max-width: 992px) {
+.const{
+    font-size: 1rem;
+}
+}
+
+/* car */
+
+/* card new */
+.text{
+    color: black;
+    font-weight: bold;
+}
+.text3{
+    color:#72809D ;
+    font-size: 0.9rem;
+}
+.btn-gren2{
+    background: #27ae60;
+    outline: none;
+    border-radius:15px;
+    padding: 3px;
+    font-size: 1rem;
+    color: #ffffff;
+    border: none;
+}
+.info-text{
+    top: 12rem;
+    background-color: #ffffff;
+    padding: 5px;
+    height: 46px;
+    width: 150px;
+    margin-left: 20px;
+    color: black;
+}
+.date-text{
+    width: fit-content;
+    background-color: #25b579;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+
+}
+/* 
+.date-2{
+    background-color: #ffffff;
+    padding: 18px 10px;
+    margin-right: 10px;
+} */
+
+/* card new */
+
+/* footer */
+.content{
+    background-color: #27ae60;
+    padding: 10px;
+}
+.button01 button{
+    outline:none;
+    border: 2px solid #72809D;
+border-radius: 20px;
+padding: 15px 20px;
+background-color: #ffffff;
+}
+
+footer{
+    background-color: #263044;
+}
+
+footer img{
+    width: 230px;
+}
+footer p{
+    color: #5e6d88;
+}
+
+.form input{
+    padding: 10px 60px;
+    border: none;
+    outline: none;
+}
+
+.form button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #27ae60;
+    color: #ffffff;
+}
+
+
+.menu-1{
+    color: #5e6d88;
+}
+.title-text{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.menu-text{
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* img cti */
+.img-item-1{
+    background-image: url(../images/city-6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* slider */
+.slide img{
+    
+}
+
+.carousel-inner img{
+    height: 300px;
+    width: 400px;
+}
+/* slider */
