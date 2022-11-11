@@ -3,3 +3,6 @@
     font-family: 'Jost', sans-serif;
 font-size: 0.9rem;    
 }
+.main{
+    overflow-x: hidden;
+}

@@ -1,4 +1,12 @@
 
+main{
+    overflow-y: hidden;
+    }
+    
+    
+main{
+    overflow-x: hidden;
+    }
 .question{
     background-color: #27ae60;
 }
